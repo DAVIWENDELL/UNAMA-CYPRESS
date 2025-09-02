@@ -24,6 +24,6 @@ jobs:
       - name: Rodar testes Cypress
         uses: cypress-io/github-action@v6
         with:
-          start: python -m http.server 5500
+          start: npm start
           wait-on: 'http://localhost:3000/'
           wait-on-timeout: 60
