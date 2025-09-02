@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://www.schemastore.org/github-workflow.json": "vscode-vfs://github/DAVIWENDELL/UNAMA-CYPRESS/.github/workflows/ci.yml"
+    }
+}
