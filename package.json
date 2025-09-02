@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server --port=5500" ,
-    "deploy-production": "npm run build && scp -r ./dist user@server:/path/to/deploy && ssh user@server 'pm2 restart app'" ,
+    "deploy-production": "npm run build && scp -r ./dist user@server:/path/to/deploy && ssh user@127.0.0.1:5500 'pm2 restart app'" ,
     "build": "echo \"Nenhum build definido\""
   },
   "keywords": [],
