@@ -25,4 +25,3 @@ jobs:
           npm run deploy-production
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        wait-on-timeout: 60
