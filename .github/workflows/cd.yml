@@ -21,5 +21,8 @@ jobs:
       - name: Build da aplicação
         run: npm run build
       - name: Deploy para produção
-        run: npm run deploy-production
+        run: |
+          npm run deploy-production
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         wait-on-timeout: 60
