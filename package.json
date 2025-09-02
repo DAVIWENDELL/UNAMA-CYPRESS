@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --port=5500"
+    "start": "live-server --port=5500", 
+    "deploy-production": "npm run build && scp -r ./dist user@server:/path/to/deploy"
   },
   "keywords": [],
   "author": "",
