@@ -23,5 +23,3 @@ jobs:
       - name: Deploy para produção
         run: |
           npm run deploy-production
-        env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
