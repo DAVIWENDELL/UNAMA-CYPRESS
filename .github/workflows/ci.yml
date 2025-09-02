@@ -1,0 +1,36 @@
+name: CI - Cypress Tests
+
+on:
+  push:
+    branches:
+      
+main
+pull_request:
+  branches:
+main
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-24.04
+    steps:
+      
+name: Checkout do código
+      uses: actions/checkout@v4
+
+      
+name: Configuração do Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '14'
+
+      
+name: Instalar dependências
+      run: npm install
+
+      
+name: Rodar testes Cypress
+      uses: cypress-io/github-action@v6
+      with:
+        start: npm start
+        wait-on: 'http://localhost:3000/'
+        wait-on-timeout: 60
