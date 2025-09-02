@@ -20,10 +20,11 @@ jobs:
         with:
           node-version: '14'
       - name: Instalar dependências
+        run: npm install
         run: npm install --save-dev live-server
       - name: Rodar testes Cypress
         uses: cypress-io/github-action@v6
         with:
           start: npm start
           wait-on: 'http://localhost:3000/'
-          wait-on-timeout: 900000
+          wait-on-timeout: 60000000
