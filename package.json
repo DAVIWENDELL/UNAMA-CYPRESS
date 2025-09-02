@@ -8,7 +8,7 @@
     "deploy-production": "npm start && npm run build && scp -r ./dist user@server:/path/to/deploy" ,
     "build": "echo \"Nenhum build definido\""
   },
-  "keywords": [],
+  "keywords": ["secrets.DEPLOY_KEY"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
