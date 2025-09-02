@@ -21,7 +21,6 @@ jobs:
           node-version: '14'
       - name: Instalar dependências
         run: npm install
-        run: npm install --save-dev live-server
       - name: Rodar testes Cypress
         uses: cypress-io/github-action@v6
         with:
